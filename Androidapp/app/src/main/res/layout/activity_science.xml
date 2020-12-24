@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nb"
+    tools:context=".Science">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="152dp"
+            android:layout_marginLeft="152dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_toStartOf="@+id/btnLogout"
+            android:layout_toLeftOf="@+id/btnLogout"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/button_shape1"
+            android:shadowColor="#6F5BA8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Logout" />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/sciencelessons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sciencelessons"
+        app:layout_constraintBottom_toTopOf="@+id/sciencequiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/l2" />
+
+    <ImageButton
+        android:id="@+id/sciencequiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sciencequiz"
+        app:layout_constraintBottom_toTopOf="@+id/sciencpastpapers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sciencelessons"
+        app:srcCompat="@drawable/q1" />
+
+    <ImageButton
+        android:id="@+id/sciencpastpapers"
+        android:layout_width="380dp"
+        android:layout_height="167dp"
+        android:onClick="sceiencepastpapers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sciencequiz"
+        app:srcCompat="@drawable/p1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
